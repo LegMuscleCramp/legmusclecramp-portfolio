@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Tito Toledo</title>
+    </head>
+    <body>
+
+        <!-- NAVIGATION -->
+        <nav id="nav-container">
+            <div class="container">
+                <span id="name" class="nav-item" data-target="#home">Tito Toledo</span>
+                <ul id="nav-list">
+                    <li class="nav-item" data-target="#work">work</li>
+                    <!-- <li class="nav-item" data-target="#about">about</li> -->
+                    <li class="nav-item" data-target="#contact">contact</li>
+                </ul>
+                <div id="hamburger-menu" class="closed">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
+                </div>
+            </div>
+        </nav>
+        <nav id="mobile-nav">
+            <ul id="mobile-nav-list">
+                <li class="nav-item" data-target="#work">work</li>
+                <hr>
+                <!-- <li class="nav-item" data-target="#about">about</li>
+                <hr"> -->
+                <li class="nav-item" data-target="#contact">contact</li>
+            </ul>
+        </nav>
+
+        <!-- HOME/LANDING SECTION -->
+        <section id="home" class="fullscreen-container">
+            <div class="column-left">
+                <div class="intro-text">
+                    <h1 id="intro-text-name">Hi there! I'm Rodrigo<br>But everyone calls me <span class="highlight">Tito</span></h1>
+                    <h3 id="intro-text-desc">I like building<span id="#code-typewriter" class="typewriter highlight"></span>things with code</h3>
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="portrait">
+
+                </div>
+            </div>
+            <div id="page-scroller" class="page-scroller" data-target="#work">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M342.6 534.6C330.1 547.1 309.8 547.1 297.3 534.6L137.3 374.6C124.8 362.1 124.8 341.8 137.3 329.3C149.8 316.8 170.1 316.8 182.6 329.3L320 466.7L457.4 329.4C469.9 316.9 490.2 316.9 502.7 329.4C515.2 341.9 515.2 362.2 502.7 374.7L342.7 534.7zM502.6 182.6L342.6 342.6C330.1 355.1 309.8 355.1 297.3 342.6L137.3 182.6C124.8 170.1 124.8 149.8 137.3 137.3C149.8 124.8 170.1 124.8 182.6 137.3L320 274.7L457.4 137.4C469.9 124.9 490.2 124.9 502.7 137.4C515.2 149.9 515.2 170.2 502.7 182.7z"/></svg>
+            </div>
+        </section>
+
+        <!-- WORK SAMPLES -->
+        <section id="work" class="fullscreen-container">
+            <div class="section-tab">
+                <span class="highlight">work</span>
+            </div>
+            <div class="container">
+                <!-- Radance -->
+                <article id="work-ncr" class="work-sample">
+                    <header class="work-sample-header">
+                        Radancy
+                        <p>UI Engineer</p>
+                    </header>
+                    <div class="description-container">
+                        <p class="work-sample-description">
+                            The nature of this work
+                            is confidential.
+                            <br>But just to give you a little taste, here's <a href="https://github.com/LegMuscleCramp/bouncy-boi" target="_blank" class="highlight">a personal project</a> inspired by some of my work at Radancy.
+                            <!-- <br>But just to give you a little taste, here are a couple of personal projects</a> inspired by some of my
+                            work at Radancy. -->
+                        </p>
+                        <div class="tags-container">
+                            <div class="tag">html</div>
+                            <div class="tag">css/scss</div>
+                            <div class="tag">javascript</div>
+                            <div class="tag">jquery</div>
+                            <div class="tag">angular</div>
+                            <div class="tag">lit</div>
+                            <div class="tag">storybook</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <!-- NCR -->
+                <article id="work-ncr" class="work-sample">
+                    <header class="work-sample-header">
+                        NCR
+                        <p>App Dev Engineer</p>
+                    </header>
+                    <div class="description-container">
+                        <p class="work-sample-description">
+                            The nature of this work is confidential.
+                            <br>
+                            You can, however, see <a href="https://github.com/LegMuscleCramp/spideymoji" target="_blank" class="highlight">one of my personal projects</a> that was inspired by something I worked on at NCR.
+                            <!-- <br>You can, however,
+                            see <a href="/spideymoji" class="highlight" target="_blank">one of my personal projects</a> that was inspired by something
+                            I worked on at NCR. -->
+                        </p>
+                        <div class="tags-container">
+                            <div class="tag">html</div>
+                            <div class="tag">css</div>
+                            <div class="tag">javascript</div>
+                            <div class="tag">jquery</div>
+                            <div class="tag">sharepoint</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <!-- ANC -->
+                <article id="work-anc" class="work-sample">
+                    <header class="work-sample-header">Atlanta North Church</header>
+                    <div class="work-sample-slideshow">
+                        <ul class="display">
+                            <li id="anc-1" class="slide-image active">
+                                <img src="img/anc/home-screen.jpg" alt="church home page">
+                            </li>
+                            <li id="anc-2" class="slide-image">
+                                <img src="img/anc/prayer-request-modal.jpg" alt="church prayer request pop up">
+                            </li>
+                            <li id="anc-3" class="slide-image">
+                                <img src="img/anc/ministries.jpg" alt="church ministries page">
+                            </li>
+                            <li id="anc-4" class="slide-image">
+                                <img src="img/anc/im-new-mobile.jpg" alt="church i'm new page mobile view">
+                            </li>
+                            <li id="anc-5" class="slide-image">
+                                <img src="img/anc/menu-mobile.jpg" alt="church menu mobile">
+                            </li>
+                        </ul>
+                        <div class="left-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg>
+                        </div>
+                        <div class="carousel">
+                            <div class="carousel-thumbnail" data-target="#anc-1">
+                                <img src="img/anc/home-screen-thumb.jpg" alt="church home page thumbnail">
+                            </div>
+                            <div class="carousel-thumbnail" data-target="#anc-2">
+                                <img src="img/anc/prayer-request-modal-thumb.jpg" alt="church prayer request pop up thumbnail">
+                            </div>
+                            <div class="carousel-thumbnail" data-target="#anc-3">
+                                <img src="img/anc/ministries-thumb.jpg" alt="church ministries page thumbnail">
+                            </div>
+                            <div class="carousel-thumbnail" data-target="#anc-4">
+                                <img src="img/anc/im-new-mobile-thumb.jpg" alt="church i'm new page mobile view thumbnail">
+                            </div>
+                            <div class="carousel-thumbnail" data-target="#anc-5">
+                                <img src="img/anc/menu-mobile-thumb.jpg" alt="church menu mobile thumbnail">
+                            </div>
+                        </div>
+                        <div class="right-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+                        </div>
+                    </div>
+                    <div class="description-container">
+                        <p class="work-sample-description">A local church needed to renovate their website, but they wanted
+                            to be able to have certain church members and ministry leaders contribute content to the website.
+                            I built them a new website using WordPress so I could easily perform updates for them when needed,
+                            but also provide them the option to make easy updates themselves.<br><br>
+                            <a href="https://atlantanorthchurch.com" target="_blank" class="button primary">view site</a>
+                        </p>
+                            <div class="tags-container">
+                                <div class="tag">wordpress</div>
+                                <div class="tag">html</div>
+                                <div class="tag">css</div>
+                                <div class="tag">php</div>
+                                <div class="tag">xampp</div>
+                                <div class="tag">mysql</div>
+                            </div>
+                    </div>
+                </article>
+                <hr>
+                <!-- ANS -->
+                <article id="work-ans" class="work-sample">
+                    <header class="work-sample-header">Atlanta North School</header>
+                    <div class="work-sample-slideshow">
+                        <ul class="display">
+                            <li id="ans-1" class="slide-image active">
+                                <img src="img/ans/home-page.jpg" alt="school home page">
+                            </li>
+                            <li id="ans-2"class="slide-image">
+                                <img src="img/ans/about-us.jpg" alt="school about us page">
+                            </li>
+                            <li id="ans-3" class="slide-image">
+                                <img src="img/ans/academics-mobile.jpg" alt="school academics page mobile view">
+                            </li>
+                        </ul>
+                        <div class="left-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg>
+                        </div>
+                        <div class="carousel">
+                            <div class="carousel-thumbnail" data-target="#ans-1">
+                                <img src="img/ans/home-page-thumb.jpg" alt="school home page thumbnail">
+                            </div>
+                            <div class="carousel-thumbnail" data-target="#ans-2">
+                                <img src="img/ans/about-us-thumb.jpg" alt="school about us page thumbnail">
+                            </div>
+                            <div class="carousel-thumbnail" data-target="#ans-3">
+                                <img src="img/ans/academics-mobile-thumb.jpg" alt="school academics page mobile view thumbnail">
+                            </div>
+                        </div>
+                        <div class="right-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+                        </div>
+                    </div>
+                    <div class="description-container">
+                        <p class="work-sample-description">A local private school needed to have their WordPress website moved over to a new host quickly. I migrated their site and made a few touch-ups to the site along the way.<br><br><a href="https://atlantanorthschool.com/" target="_blank" class="button primary">view site</a></p>
+                        <div class="tags-container">
+                            <div class="tag">wordpress</div>
+                            <div class="tag">php</div>
+                            <div class="tag">mysql</div>
+                            <div class="tag">css</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <!-- ZEEZOR -->
+                <article id="work-zeezor" class="work-sample">
+                    <header class="work-sample-header">ZeeZor</header>
+                    <div class="description-container">
+                        <p class="work-sample-description">ZeeZor used a lot of SQL queries to calculate performance metrics for their clients, but they lacked a single organized location to manage all those queries. I collaborated on an in-house tool for adding and updating queries through a simple user interface. I implemented drag-and-drop functionality on an Angular frontend, wrote the REST API methods in Java, and created a MySQL database to store all the queries.</p>
+                        <div class="tags-container">
+                            <div class="tag">angular</div>
+                            <div class="tag">java</div>
+                            <div class="tag">mysql</div>
+                            <div class="tag">css</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="fullscreen-container">
+            <div class="section-tab">
+                <span class="highlight">contact</span>
+            </div>
+            <div class="container">
+                <div class="contact-content">
+                    <h2>Don't be shy. <span class="highlight">Reach out.</span></h2>
+                    <div class="contact-icons-container">
+                        <a href="mailto:hello@titotoledo.me?subject=Howdy%20Tito!">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rodrigo-toledo-ii/" target="_blank">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/></svg>
+                            </div>
+                        </a>
+                        <a href="https://github.com/LegMuscleCramp" target="_blank">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z"/></svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/typewriter.js"></script>
+    </body>
+</html>
