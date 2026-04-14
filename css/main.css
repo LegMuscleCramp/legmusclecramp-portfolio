@@ -302,6 +302,70 @@ article.work-sample header.work-sample-header {
     color: var(--greyscale-03);
 }
 
+/* demos */
+article.work-sample div.work-sample-container {
+    box-sizing: border-box;
+    width: 100%;
+
+    ul.work-sample-demos {
+        box-sizing: border-box;
+        list-style-type: none;
+        padding: 0;
+
+        li.work-sample-demo-item {
+            display: grid;
+            grid-template-areas:
+            "left-arrow display right-arrow"
+            "... description ..."
+            "... tags ...";
+            grid-template-columns: auto 1fr auto;
+
+            .demo-display {
+                background: var(--greyscale-03);
+                padding: 8rem;
+                grid-area: display;
+            }
+
+            .demo-text {
+                grid-area: description;
+            }
+
+            .demo-left {
+                grid-area: left-arrow;
+            }
+
+            .demo-right {
+                grid-area: right-arrow;
+            }
+
+            .demo-left,
+            .demo-right {
+                box-sizing: border-box;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                padding: 1rem;
+
+                svg {
+                    cursor: pointer;
+                    fill: var(--greyscale-03);
+                    min-width: 64px;
+                }
+
+                svg:hover {
+                    fill: var(--secondary);
+                }
+            }
+
+            .tags-container {
+                grid-area: tags;
+            }
+        }
+    }
+}
+
 /* slideshow */
 article.work-sample div.work-sample-slideshow {
     display: grid;
