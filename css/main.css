@@ -313,9 +313,12 @@ article.work-sample div.work-sample-container {
         padding: 0;
         display: grid;
         grid-template-areas:
-        "left-arrow display right-arrow"
-        "... tags ...";
-        grid-template-columns: auto 1fr auto;
+        "display display"
+        "left-arrow right-arrow"
+        "tags tags";
+        grid-template-columns: auto 1fr;
+        row-gap: 1rem;
+        column-gap: 2rem;
 
         li.work-sample-demo-item {
             grid-area: display;
@@ -325,6 +328,7 @@ article.work-sample div.work-sample-container {
                 background: var(--greyscale-03);
                 border-radius: 1rem;
                 padding: 4rem;
+                user-select: none;
 
                 /* ncr collapsible cards demo */
                 #collapsible-side-cards-img-container {
@@ -347,21 +351,21 @@ article.work-sample div.work-sample-container {
 
         .demo-left {
             grid-area: left-arrow;
+            justify-content: flex-end;
         }
 
         .demo-right {
             grid-area: right-arrow;
+            justify-content: flex-start;
         }
 
         .demo-left,
         .demo-right {
             box-sizing: border-box;
             display: flex;
-            justify-content: flex-start;
             align-items: center;
             width: 100%;
             height: 100%;
-            padding: 1rem;
 
             button {
                 background: none;
@@ -373,7 +377,7 @@ article.work-sample div.work-sample-container {
                 svg {
                     cursor: pointer;
                     fill: var(--greyscale-03);
-                    min-width: 64px;
+                    min-width: 3rem;
 
                     &:hover {
                         fill: var(--secondary);
@@ -383,6 +387,7 @@ article.work-sample div.work-sample-container {
         }
 
         .tags-container {
+            margin-top: 2rem;
             grid-area: tags;
         }
     }
@@ -654,7 +659,7 @@ section#contact div.contact-icons-container a div.contact-icon svg {
 /* medium to large desktop screens */
 @media screen and (max-width: 1919px) {
     .container {
-        width: 80%;
+        width: 70%;
     }
 
     section.fullscreen-container div.section-tab span {
@@ -735,6 +740,10 @@ section#contact div.contact-icons-container a div.contact-icon svg {
         display: none;
     }
 
+    article.work-sample div.work-sample-container ul.work-sample-demos [class^=demo-] button svg {
+        min-width: 2rem;
+    }
+
     section#about div.about-contents {
         padding: 25vh 0 80px;
     }
@@ -791,6 +800,10 @@ section#contact div.contact-icons-container a div.contact-icon svg {
         border: 0;
     }
 
+    article.work-sample div.work-sample-container ul.work-sample-demos li.work-sample-demo-item .demo-display {
+        padding: 2rem;
+    }
+
     article.work-sample {
         padding: 80px 0;
     }
@@ -829,10 +842,6 @@ section#contact div.contact-icons-container a div.contact-icon svg {
 
     .page-scroller {
         bottom: 0;
-    }
-
-    article.work-sample div.work-sample-container ul.work-sample-demos li.work-sample-demo-item .demo-display {
-        padding: 2rem;
     }
 
     article.work-sample div.work-sample-slideshow {
