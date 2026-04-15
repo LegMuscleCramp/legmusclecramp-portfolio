@@ -319,11 +319,29 @@ article.work-sample div.work-sample-container {
 
         li.work-sample-demo-item {
             grid-area: display;
+            min-width: 0;
             
             .demo-display {
                 background: var(--greyscale-03);
                 border-radius: 1rem;
-                padding: min(8rem,15%);
+                padding: 4rem;
+
+                /* ncr collapsible cards demo */
+                #collapsible-side-cards-img-container {
+                    background-color: var(--greyscale-02);
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    padding: 4rem;
+                    width: 100%;
+
+                    figure img {
+                            width: 100%;
+                            margin-bottom: 1rem;
+                    }
+                }
             }
         }
 
@@ -788,6 +806,11 @@ section#contact div.contact-icons-container a div.contact-icon svg {
     div.skill {
         max-width: 200px;
     }
+
+    /* ncr collapsible cards demo */
+    #collapsible-side-cards-img-container {
+        flex-wrap: wrap;
+    }
 }
 
 /* small tablet */
@@ -806,6 +829,10 @@ section#contact div.contact-icons-container a div.contact-icon svg {
 
     .page-scroller {
         bottom: 0;
+    }
+
+    article.work-sample div.work-sample-container ul.work-sample-demos li.work-sample-demo-item .demo-display {
+        padding: 2rem;
     }
 
     article.work-sample div.work-sample-slideshow {
